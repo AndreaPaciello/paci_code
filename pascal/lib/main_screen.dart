@@ -43,10 +43,10 @@ class _MainScreenState extends State<MainScreen> {
           ],
         ),
       ),
-      drawer: const Drawer(
+      drawer:  Drawer(
         child: Padding(
-          padding: EdgeInsets.only(top: 80.0),
-          child: Column(children: [
+          padding: const EdgeInsets.only(top: 80.0),
+          child: Column(children: const [
             CircleAvatar(
               minRadius: 70,
             ),
