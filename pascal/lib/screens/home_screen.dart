@@ -34,6 +34,44 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             );
           },
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          
+          child: Text('News', style: TextStyle(color: Colors.grey),),
+        ),
+        SizedBox(
+          height: 500,
+          child: ListView.builder(itemBuilder: (context, index){
+            return Column(
+              children: [
+                Container(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        CircleAvatar(radius: 33,),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('3 marzo 2023', style: TextStyle(color: Colors.grey),),
+                              Text('data', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),)
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: const Divider(thickness: 0.5,),
+                ),
+              ],
+            );
+          }),
         )
       ],
     ));
